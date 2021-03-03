@@ -1,6 +1,7 @@
 {
+  "homepage": "https://pavanitha.github.io/thanx_mobileapp",
   "dependencies": {
-    "expo": "~40.0.0",
+    "expo": "^40.0.1",
     "expo-app-loading": "^1.0.1",
     "expo-font": "~8.4.0",
     "react": "16.13.1",
@@ -9,9 +10,12 @@
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {
-    "@babel/core": "~7.9.0"
+    "@babel/core": "~7.9.0",
+    "gh-pages": "^3.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
