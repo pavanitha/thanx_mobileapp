@@ -35,5 +35,4 @@ cache:
   - $HOME/.android/build-cache
  
 script:
-  - npm run deploy
-  - npm start
+  - ./gradlew build connectedCheck
