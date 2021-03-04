@@ -7,4 +7,5 @@ install:
   - npm ci
 
 script:
-  - npm run build
+  - npm run deploy
+  - npm start
