@@ -6,6 +6,9 @@ cache: npm
 install:
   - npm ci
 
+before_script:
+  - npm install -g expo-cli
+
 script:
   - npm run deploy
   - npm start
